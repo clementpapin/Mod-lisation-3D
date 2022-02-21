@@ -1,0 +1,15 @@
+Ruleset que j'ai choisi : 
+
+- CommentRequired -> Me permet de savoir ou il manque de la javaDoc
+- OnlyOneReturn -> Un seul return par fonction est important en terme de lisibilité
+- LawOfDemeter -> Les blockChains peuvent être racourcis
+- TooManyMethods -> Trop de fonctions dans une classe peux être un problème, autant diviser avec une autre classe
+- ShortMethodName -> Les variables trop courte sont problématique pour la reclecture plus tard si on revient dans 3 moins sans avoir toucher au programme
+
+Règles qui posent problèmes :
+
+AvoidInstantiatingObjectsInLoops -> Comme le programme tourne et doit être responsive, c'est compliqué de faire sans
+OneDeclarationPerLine -> Pose probleme si on chercher des elements dans le fichier FXML
+MethodArgumentCouldBeFinal -> pose probleme si on cherche a lancer le programme car certain sont redefinie dans d'autre classe
+IfStmtsMustUseBraces -> permet de faire des ligne de code plus courtes au lieu d'avoir 6 lignes au lieu de 1
+AtLeastOneConstructor -> Inutile pour certain classe de faire un constructeur

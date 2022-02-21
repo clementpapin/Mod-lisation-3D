@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<ruleset name="Custom Rules"
+    xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+
+    <description>
+    Liste de règles vide
+    </description>
+
+<rule ref="category/java/documentation.xml/CommentRequired"/>
+<rule ref="category/java/codestyle.xml/ShortVariable">
+    <properties>
+        <property name="minimum" value="3" />
+    </properties>
+</rule>
+<rule ref="category/java/codestyle.xml/ShortMethodName">
+    <properties>
+        <property name="minimum" value="3" />
+    </properties>
+</rule>
+<rule ref="category/java/design.xml/AvoidCatchingGenericException" />
+<rule ref="category/java/codestyle.xml/OnlyOneReturn" />
+<rule ref="category/java/design.xml/LawOfDemeter" />
+<rule ref="category/java/errorprone.xml/AvoidLiteralsInIfCondition" />
+<rule ref="category/java/design.xml/NcssCount">
+    <properties>
+        <property name="methodReportLevel" value="50" />
+        <property name="classReportLevel" value="300" />
+        <property name="ncssOptions" value="" />
+    </properties>
+</rule>
+<rule ref="category/java/design.xml/ExcessiveMethodLength" />
+<rule ref="category/java/design.xml/ExcessiveClassLength" />
+<rule ref="category/java/bestpractices.xml/UnusedAssignment" />
+<rule ref="category/java/design.xml/CyclomaticComplexity" />
+<rule ref="category/java/errorprone.xml/MissingBreakInSwitch" />
+<rule ref="category/java/bestpractices.xml/SystemPrintln" />
+<rule ref="category/java/errorprone.xml/AvoidFieldNameMatchingMethodName" />
+<rule ref="category/java/documentation.xml/UncommentedEmptyMethodBody" />
+<rule ref="category/java/documentation.xml/CommentSize" />
+<rule ref="category/java/codestyle.xml/LongVariable" />
+<rule ref="category/java/performance.xml/AvoidArrayLoops" />
+<rule ref="category/java/performance.xml/AvoidInstantiatingObjectsInLoops" />
+
+</ruleset>

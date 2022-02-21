@@ -1,0 +1,21 @@
+<rule ref="category/java/documentation.xml/CommentContent" />
+<rule ref="category/java/codestyle.xml/ShortVariable"/>
+<rule ref="category/java/codestyle.xml/OnlyOneReturn" />
+<rule ref="category/java/design.xml/SimplifyBooleanReturns" />
+<rule ref="category/java/design.xml/ExcessiveMethodLength" />
+<rule ref="category/java/design.xml/GodClass" />
+<rule ref="category/java/design.xml/TooManyFields" />
+<rule ref="category/java/design.xml/AvoidCatchingGenericException" />
+<rule ref="category/java/bestpractices.xml/LiteralsFirstInComparisons" />
+<rule ref="category/java/bestpractices.xml/UseAssertSameInsteadOfAssertTrue" />
+<rule ref="category/java/bestpractices.xml/ArrayIsStoredDirectly" />
+<rule ref="category/java/bestpractices.xml/UnusedPrivateField" />
+<rule ref="category/java/bestpractices.xml/SystemPrintln" />
+<rule ref="category/java/codestyle.xml/DefaultPackage" />
+<rule ref="category/java/codestyle.xml/LongVariable" />
+<rule ref="category/java/performance.xml/AvoidArrayLoops" />
+<rule ref="category/java/errorprone.xml/AvoidCatchingThrowable" />
+<rule ref="category/java/errorprone.xml/AvoidFieldNameMatchingMethodName" />
+<rule ref="category/java/errorprone.xml/AvoidFieldNameMatchingTypeName" />
+<rule ref="category/java/errorprone.xml/AvoidMultipleUnaryOperators" />
+</ruleset>

@@ -1,0 +1,13 @@
+5 règles les plus importantes :
+    - CommentRequired : je l'ai choisi car les commentaires permettent à n'importe qui de reprendre ton code et de comprendre ce que tu as voulu faire
+    - ExcessiveClassLength : important car si une classe est trop longue, c'est beaucoup plus difficile de la comprendre, ca peut poser des problèmes de compréhension et lisibilité
+    - CyclomaticComplexity : important car si trop de conditions, on peut rapidement se perdre et ne plus savoir a quoi cela correspond et donc poser des problèmes de débugages
+    - ShortVariable : important pour la compréhension, permet de comprendre instinctivement le but de cette variable
+    - AvoidFieldNameMatchingMethodName : permet d'éviter qu'une variable portent le même nom qu'une méthode ce qui pourrait gener la compréhension
+
+5 règles qui posent problème mais que je n'ai pas choisi :
+    - CommentSize : je ne trouve pas ca important de limiter la taille des commentaires 
+    - LooseCoupling : je ne trouve pas ca très important de passer par une HashMap ca ne change pas énormément la lisibilité
+    - UseDiamondOperator : je trouve que d'autres règles sont plus importantes que celle la
+    - ImmutableField : je ne trouve pas ca très important car l'erreur a lieu dans les tests
+    - SimplifyBooleanReturns : je ne trouve pas ca trop important, ca ne pose ni problème de compréhension et ni de compilation

@@ -1,0 +1,95 @@
+<ruleset xmlns="http://pmd.sourceforge.net/ruleset/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Custom Rules" xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+
+<description> Ensemble des règles considérées en Production d'applications, S3 du DUT Informatique de Lille </description>
+1
+<rule ref="category/java/design.xml/LawOfDemeter"/>
+2
+<rule ref="category/java/codestyle.xml/LocalVariableNamingConventions"/>
+3
+<rule ref="category/java/codestyle.xml/ShortVariable">
+<properties>
+<property name="minimum" value="3"/>
+</properties>
+</rule>
+4
+<rule ref="category/java/design.xml/CyclomaticComplexity">
+5
+<rule ref="category/java/documentation.xml/CommentRequired">
+6
+<rule ref="category/java/documentation.xml/CommentRequired">
+<properties>
+<property name="methodWithOverrideCommentRequirement" value="Ignored"/>
+<property name="accessorCommentRequirement" value="Ignored"/>
+<property name="classCommentRequirement" value="Required"/>
+<property name="fieldCommentRequirement" value="Required"/>
+<property name="publicMethodCommentRequirement" value="Required"/>
+<property name="protectedMethodCommentRequirement" value="Required"/>
+<property name="enumCommentRequirement" value="Required"/>
+<property name="serialVersionUIDCommentRequired" value="Ignored"/>
+<property name="serialPersistentFieldsCommentRequired" value="Ignored"/>
+</properties>
+</rule>
+7
+<rule ref="category/java/codestyle.xml/OnlyOneReturn"/>
+8
+<rule ref="category/java/bestpractices.xml/UnusedImports"/>
+9
+<rule ref="category/java/documentation.xml/CommentSize">
+    <properties>
+        <property name="maxLines" value="6" />
+        <property name="maxLineLength" value="80" />
+    </properties>
+</rule>
+10
+<rule ref="category/java/design.xml/TooManyMethods">
+    <properties>
+        <property name="maxmethods" value="16" />
+    </properties>
+</rule>
+11
+<rule ref="category/java/design.xml/ExcessiveClassLength">
+    <properties>
+        <property name="minimum" value="400.0" />
+    </properties>
+</rule>
+12
+<rule ref="category/java/design.xml/GodClass"/>
+13
+<rule ref="category/java/bestpractices.xml/UnusedAssignment">
+<properties>
+<property name="checkUnusedPrefixIncrement" value="true"/>
+<property name="reportUnusedVariables" value="false"/>
+</properties>
+</rule>
+14
+<rule ref="category/java/codestyle.xml/UseDiamondOperator"/>
+15
+<rule ref="category/java/design.xml/NcssCount">
+<properties>
+<property name="methodReportLevel" value="25"/>
+<property name="classReportLevel" value="300"/>
+<property name="ncssOptions" value=""/>
+</properties>
+</rule>
+16
+<rule ref="category/java/codestyle.xml/NoPackage" />
+17
+<rule ref="category/java/errorprone.xml/ImportFromSamePackage"/>
+18<rule ref="category/java/codestyle.xml/ShortMethodName">
+    <properties>
+        <property name="minimum" value="3" />
+    </properties>
+</rule>
+19
+<rule ref="category/java/errorprone.xml/AvoidLiteralsInIfCondition">
+<properties>
+<property name="ignoreMagicNumbers" value="1"/>
+<property name="ignoreExpressions" value="true"/>
+</properties>
+</rule>
+20
+<rule ref="category/java/codestyle.xml/LongVariable">
+    <properties>
+        <property name="minimum" value="17" />
+    </properties>
+</rule>

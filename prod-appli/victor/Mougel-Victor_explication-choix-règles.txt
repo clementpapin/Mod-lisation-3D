@@ -1,0 +1,17 @@
+
+Règles que j'ai choisi:
+
+-CommentContent -> il es très important de commenter son code pour que les personnes qui travaillent sur le même projet que nous comprennent ce que les méthodes font
+-ShotVariable -> Il est important pour la compréhension globale du programme que les variables aient un sens
+-ExcessiveMethodLength -> Les méthodes trop longues peuvent très souvent séparées en plusieurs méthodes plus petites pour améliorer la compréhension
+-TooManyFields -> Il est mieux de créer une nouvelle classe pour rassembler les attributs qui servent à identifier une même chose pour améliorer la maintenabilité du programme
+-AvoidCatchingGenericException -> Il ne faut pas ignorer les exception génériques car elle méneront surement à d'autres erreurs plus tard dans le programme
+
+Les Règles qui posent problème dans mon programme et que je n'ai pas choisi:
+
+-CommentSize -> c'est un règle qui est importante pour la compréhension mais j'ai conclu que c'était la moins importante parmis celle que j'ai déjà mis
+-OnlyOneReturn -> Je ne trouve pas cette règle très importante car elle ne changera pas le résultat de la fonction
+-UseDiamondOperator -> Le changement est minime et la compréhension n'est en rien améliorée par ce changement
+-SimplifyBooleanReturn -> la compréhension est peu améliorée et les autres règles que j'ai mises auparavent sont plus importants
+-LiteralsFirstInComparaisons -> Dans notre projet, si un des arguments est un nullPointerException (ce que est évité grâce à cette règle) alors il y a une erreur
+dans notre programme, il n'est donc pas optimale "d'éviter" cette erreur
